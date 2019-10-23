@@ -1,2 +1,7 @@
 ＃！/bin/bash
-useradd -s /sbin/nolg  li
+useradd -s /sbin/nologin  nginx
+yum -y install gcc pcre-devel  openssl-devel
+tar -xf nginx
+cd nginx
+./configure  && make  && make install
+/usr/local/nginx/sbin/nginx
